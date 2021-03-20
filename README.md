@@ -11,12 +11,10 @@ Approve the merge request after
 --- 
 
 ##### Task 2: Python
-Write a rest api using Python to return current time and date in json format.
+Write a rest api using Python flask framework to return current time and date in json format.
 Host the api on 8080 port no. Execute the script locally and make sure the date and time is returned in json format.
+Push the code in github repo
 
-###### Tools
-Scripting: Python
-Framework: Flask 
 
 Reference: https://flask-restful.readthedocs.io/en/latest/quickstart.html#a-minimal-api
 
@@ -25,6 +23,7 @@ Reference: https://flask-restful.readthedocs.io/en/latest/quickstart.html#a-mini
 ##### Task 3: Docker
 Write a docker file to containerise above python app. 
 Execute the docker container locally by forwarding the app port on local and verify the api is accessible 
+Push the Dockerfile in the github repo
 
 Reference:  https://docs.docker.com/language/python/build-images/
 
@@ -49,6 +48,9 @@ Create new IAM user with Programmatic access and policy to access AWS S3 service
 Install and configure AWS cli with above credentials. 
 
 Write a terraform script to launch an EC2 instance with public IP assigned, SSH key, security group rule 22 and 8080 port open for your IP or for the internet. 
+Store the terraform state in s3 bucket. 
+
+Push the terraform scripts to the github repo
 
 Reference: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
 ---
