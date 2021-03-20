@@ -1,7 +1,7 @@
-# devops-task
-Sample task to get Hand-on on devops tools and flow. 
+# Devops Tasks
+Sample task to get Hand-on with devops tools and flow. 
 
----
+
 
 ##### Task 1: Git
 Create a Github repo and clone it locally, Commit a README.md file and push it to the repo. 
@@ -15,10 +15,10 @@ Write a rest api using Python to return current time and date in json format.
 Host the api on 8080 port no. Execute the script locally and make sure the date and time is returned in json format.
 
 ###### Tools
-**Scripting:** Python
-**Framework:** Flask 
+Scripting: Python
+Framework: Flask 
 
-**Reference:** https://flask-restful.readthedocs.io/en/latest/quickstart.html#a-minimal-api
+Reference: https://flask-restful.readthedocs.io/en/latest/quickstart.html#a-minimal-api
 
 ---
 
@@ -26,7 +26,7 @@ Host the api on 8080 port no. Execute the script locally and make sure the date 
 Write a docker file to containerise above python app. 
 Execute the docker container locally by forwarding the app port on local and verify the api is accessible 
 
-**Reference:**  https://docs.docker.com/language/python/build-images/
+Reference:  https://docs.docker.com/language/python/build-images/
 
 ---
 
@@ -38,7 +38,7 @@ Checkout the python app and the Dockerfile from above steps
 Build the docker image with the pipeline no. as tag to the docker image
 Push the docker image to the docker registry created above
 
-**Reference:** https://docs.github.com/en/actions/guides/publishing-docker-images
+Reference: https://docs.github.com/en/actions/guides/publishing-docker-images
 
 ---
 
@@ -50,6 +50,7 @@ Install and configure AWS cli with above credentials.
 
 Write a terraform script to launch an EC2 instance with public IP assigned, SSH key, security group rule 22 and 8080 port open for your IP or for the internet. 
 
+Reference: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
 ---
 
 ##### Task 6: Ansible
@@ -67,4 +68,13 @@ Execute the playbook and verify if the python rest api is accessible on the Publ
 ---
 
 ##### Task 7: Kubernetes
+
+Install kubernetes on AWS using Kops. 
+Master Nodes: 1
+Worker Nodes: 1
+Kube API endpoint: Public
+Use official documentation below. 
+https://kubernetes.io/docs/setup/production-environment/tools/kops/
+Short reference 
+https://github.com/nitingadekar/k8s-basics#kubernetese-basic
 
