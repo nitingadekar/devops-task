@@ -53,6 +53,7 @@ Store the terraform state in s3 bucket.
 Push the terraform scripts to the github repo
 
 Reference: https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/instance
+
 ---
 
 ##### Task 6: Ansible
