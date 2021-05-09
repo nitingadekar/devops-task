@@ -81,3 +81,32 @@ https://kubernetes.io/docs/setup/production-environment/tools/kops/
 Short reference 
 https://github.com/nitingadekar/k8s-basics#kubernetese-basic
 
+
+---
+
+##### Task 8: Helm
+
+- Write a Helm chart to render a deployment and service so that the above docker image in Task 3 can be executed.
+Ref: https://helm.sh/docs/helm/helm_create/ 
+```
+Service type: NodePort/Loadbalancer/ClusterIP
+Deployment.Port:8080
+service.port: 80
+Replicas:1
+```
+
+- Render the template on local and confirm the manifest after rendering.    
+Ref: https://helm.sh/docs/helm/helm_template/   
+- Package the helm chart using helm package on local.    
+Ref: https://helm.sh/docs/helm/helm_package/    
+- Deploy the chart in default namespace using helm install.    
+Ref: https://helm.sh/docs/helm/helm_install/   
+- Deploy same chart in 3 different namespaces (dev,qa,stg) using helm options.    
+Ref: https://helm.sh/docs/helm/helm_install/#options    
+- Update the docker image tag with any changes, and update the deployed application version by updating image tag in helm chart.    
+Ref: https://helm.sh/docs/helm/helm_upgrade/    
+
+- Push the helm chart to github repo 
+
+
+
