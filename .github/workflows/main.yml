@@ -39,7 +39,7 @@ jobs:
         context: ./
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/pytime:${COMMIT_VAR}
+        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/pytime:${{ env.COMMIT_VAR }}
 
     - name: Image digest
       run: |
