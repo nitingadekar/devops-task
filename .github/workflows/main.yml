@@ -32,12 +32,14 @@ jobs:
 
     - name: Build and push
       id: docker_build
+      env:
+        COMMIT_VAR: ${{ contains(github.event.head_commit.message, '[commit var]') }}
       uses: docker/build-push-action@v2
       with:
         context: ./
         file: ./Dockerfile
         push: true
-        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/pytime:${GITHUB_RUN_ID}
+        tags: ${{ secrets.DOCKER_HUB_USERNAME }}/pytime:${COMMIT_VAR}
 
     - name: Image digest
       run: |
