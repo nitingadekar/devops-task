@@ -10,4 +10,5 @@ RUN python -m pip install --user boto3
 COPY ["attachment.py","rest.py"] .
 
 # command to run on container start
+EXPOSE 8080
 CMD [ "python", "./rest.py" ]
