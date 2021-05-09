@@ -7,7 +7,7 @@ FROM python:latest
 RUN python -m pip install --user boto3
 
 # copy the content of the local src directory to the working directory
-COPY ["rest.py"] .
+COPY rest.py .
 
 # command to run on container start
 EXPOSE 8080
