@@ -4,8 +4,7 @@ FROM python:latest
 
 # install dependencies
 #RUN pip install -r requirements.txt
-RUN python -m pip install --user boto3
-
+RUN python -m pip install flask datetime pytz
 # copy the content of the local src directory to the working directory
 COPY rest.py .
 
