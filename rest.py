@@ -14,4 +14,4 @@ def home():
  tz = localtime.tzname(now)
  vardt = now.strftime("%m/%d/%Y, %H:%M:%S")
  return (tz + "  " + vardt)
-app.run(port=8080, debug=True)
+app.run(host="0.0.0.0", port=8080, debug=True)
